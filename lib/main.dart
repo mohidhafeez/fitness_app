@@ -1,5 +1,6 @@
 import 'package:fitness_app/constants/theme.dart';
 import 'package:fitness_app/utils/size_config.dart';
+import 'package:fitness_app/views/pages/Calander/calander_screen.dart';
 import 'package:fitness_app/views/pages/Home/home_screen.dart';
 import 'package:fitness_app/views/pages/Moment%20Library/moment_library.dart';
 import 'package:fitness_app/views/pages/Social/social_screen.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
             return MaterialApp(
               theme: AppTheme().getTheme(),
               debugShowCheckedModeBanner: false,
-              home: const HomeScreen(),
+              home: const CalanderScreen(),
             );
           },
         );

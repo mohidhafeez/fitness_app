@@ -11,4 +11,7 @@ class AppIcons {
   static String male = "assets/icons/male.png";
   static String female = "assets/icons/female.png";
   static String pointer = "assets/icons/pointer.png";
+  static String like = "assets/icons/heart.png";
+  static String comment = "assets/icons/comment.png";
+  static String share = "assets/icons/send.png";
 }

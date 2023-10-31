@@ -2,7 +2,9 @@ import 'package:fitness_app/constants/colors.dart';
 import 'package:fitness_app/constants/icons.dart';
 import 'package:fitness_app/utils/size_config.dart';
 import 'package:fitness_app/utils/spacing.dart';
+import 'package:fitness_app/views/pages/Calander/calander_screen.dart';
 import 'package:fitness_app/views/pages/Home/components/custom_container.dart';
+import 'package:fitness_app/views/pages/Social/social_screen.dart';
 import 'package:fitness_app/views/widgets/scrollable_list.dart';
 import 'package:flutter/material.dart';
 
@@ -151,9 +153,20 @@ class _CustomDrawerState extends State<CustomDrawer> {
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
+            leading: Icon(Icons.navigate_next),
+            title: Text('Social'),
             onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SocialScreen()));
+              // Handle settings menu item
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.navigate_next),
+            title: Text('Calander'),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => CalanderScreen()));
               // Handle settings menu item
             },
           ),
